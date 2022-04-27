@@ -6,3 +6,5 @@ stop.py= start,stop,terminate instance.
 describe_instance.py= list the running instances using filters.
 
 ebs-snapshot-email.py= Create snapshot for instances having tag 'backup' and sent the instance id as email using SNS.
+
+createImage-copytoRegion.py= Create an image for a specific instance id and copy the image to another region using the boto3 waiter.
