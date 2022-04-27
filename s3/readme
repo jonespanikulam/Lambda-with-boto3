@@ -1,2 +1,4 @@
 s3BucketCreate.py  = To create a s3 bucket.
 
+putObject.py = Upload file to s3 bucket
+
