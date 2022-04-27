@@ -1,2 +1,4 @@
 
 launch_ec2.py  = Launch ec2 instance.
+
+stop.py= start,stop,terminate instance.
