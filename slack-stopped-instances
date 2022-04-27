@@ -1,0 +1,22 @@
+import json
+import requests
+import os
+import boto3
+from base64 import b64decode
+
+slack_webhook='xxxxxxxxxxxxxxxxxx'
+#ENCRYPTED= os.environ['SLACK_WEBHOOK']
+#DECRYPTED= boto3.client('kms').decrypt(CiphertextBlob=b64decode(ENCRYPTED))['Plaintext']
+#DECRYPTED = boto3.client('kms').decrypt(
+#    CiphertextBlob=b64decode(ENCRYPTED),
+#    EncryptionContext={'LambdaFunctionName': os.environ['AWS_LAMBDA_FUNCTION_NAME']}
+#)['Plaintext'].decode('utf-8')
+
+#slack_webhook = DECRYPTED
+
+
+def send_slack(event, context):
+    print(str(event))
+    slack_message= {'text': 'Ec2 instance Server1 is Stopped'}
+    resp= requests.post(slack_webhook,data=json.dumps(slack_message))
+    return resp.text
