@@ -7,3 +7,5 @@ putObject.py = Upload file to s3 bucket
 deleteObject.py = Delete object from s3 bucket
 
 listObject.py=  List all object from s3 bucket 
+
+listBuckets.py = List all buckets
