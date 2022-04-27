@@ -4,3 +4,5 @@ launch_ec2.py  = Launch ec2 instance.
 stop.py= start,stop,terminate instance.
 
 describe_instance.py= list the running instances using filters.
+
+ebs-snapshot-email.py= Create snapshot for instances having tag 'backup' and sent the instance id as email using SNS.
