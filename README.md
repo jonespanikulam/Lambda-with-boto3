@@ -15,4 +15,6 @@
 
 ![image](https://user-images.githubusercontent.com/59678465/165514596-95f6cc7e-0117-4419-9a61-d45206a9efeb.png)
 
+3) dynamodb-json-s3
 
+When a json file uploaded to s3, the lambda function automatically process the file and put the data in dynamodb
