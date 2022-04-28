@@ -7,9 +7,7 @@ sns_arn='arn:aws:sns:us-east-1:671754373350:unusedVolume'
 def unused_Volume(event, context):
     unused_vols= []
     for volume in volumes['Volumes']:
-        if len(volume['Attachments']) == 1:
-            # if len(volume['Attachments']) == 0: this should be zero for unused volume. FOr testing
-            # purpose have used as 1.
+        if len(volume['Attachments']) == 0:
             unused_vols.append(volume['VolumeId'])
             #print(volume)
             print('------'*5)
